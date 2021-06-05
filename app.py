@@ -40,7 +40,7 @@ def pay():
         email=email,
         phone=phone,
         send_sms=True,
-        redirect_url="http://localhost:5000/success"
+        redirect_url="https://sample-payment-gateway-flask.herokuapp.com/success"
         )
         
         return redirect(response['payment_request']['longurl'])
